@@ -1,24 +1,26 @@
 /* eslint-disable indent */
 'use strict';
 
-console.log(4 + +'5');
+const numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?', '');
 
-let incr = 10,
-    decr = 10;
-
-
-// ++incr;
-// --decr;
-console.log(++incr);
-console.log(--decr);
-
-
-console.log(5%2);
+const personalMovieDB = {
+    count : numberOfFilms,
+    movies :{},
+    actors : {},
+    genres : [],
+    privat : false
+};
 
 
-console.log(2 + 2 * 2 == 8 );
+const a = prompt('Последние просмотреные фильмы?', ''),
+      b = prompt('На сколько вы его оцените?'),
+      c = prompt('Последние просмотреные фильмы?', ''),
+      d = prompt('На сколько вы его оцените?');
 
-const isChecked = true,
-      isClose = true;
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
 
-console.log(isChecked && isClose);
+
+console.log(personalMovieDB);
+
+

@@ -1,8 +1,8 @@
-let incr = 10,
-    decr = 10;
+const numberOfFilms = prompt('Сколько фильмов вы уде посмотрели?');
 
+let personalMovieDB : {
+  count: numberOfFilms;  
 
-incr++;
-decr--;
-console.log(incr);
-console.log(decr);
+};
+
+console.log(count);
