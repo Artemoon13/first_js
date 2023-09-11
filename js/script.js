@@ -14,7 +14,7 @@ const personalMovieDB = {
 
 
 
-for (let i =0; i < 2; i++) {
+for (let i = 0; i < 2; i++) {
     const a = prompt('Последние просмотреные фильмы?', '');
     const b = prompt('На сколько вы его оцените?');
     
@@ -25,11 +25,7 @@ for (let i =0; i < 2; i++) {
         console.log('error');
         i--;
     }
-    
-     
-    
-    
-    
+    i++;
 }
 
 if (personalMovieDB.count < 10) {
@@ -41,7 +37,7 @@ if (personalMovieDB.count < 10) {
     alert('Вы киноман!');
 
 } else {
-    alert('произошла ошибка');
+    alert('Произошла ошибка');
 }
 
 
